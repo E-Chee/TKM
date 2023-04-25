@@ -15,14 +15,13 @@
 
 <body>
     <div id="nav_bar">
-        <div id="logo">
-            <h2>SCTickets</h2>
-        </div>
+        <img id="logo" src="sc_logo.png">
+        <section id="logo_title"><b>SCTickets</b></section>
         <div class="vertical_line" id="nav_vert"></div>
         <form id="nav_form">
             <button class="text_button">About</button>
             <div id="search_section">
-                <span class="img_button" id="mag"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span class="img_button" id="magnifying_glass"><i class="fa-solid fa-magnifying-glass"></i></span>
                 <input type="text" id="search_bar" name="search_bar" placeholder="Search for concerts and events">
             </div>
             <button class="text_button">Sell</button>
@@ -31,17 +30,27 @@
             <span class="img_button"><i class="fa-solid fa-cart-shopping"></i></span>
         </form>
     </div>
+    <!-- <div id="background">
+        <div class="slideshows" id="bg_vid">
+            <div class="pic1">
+                <img src="joe.png">
+            </div>
+            <div class="pic2">
+                <img src="jj.png">
+            </div>
+        </div>
+    </div> -->
     <br>
     <div id="spotlight">
-        <div id="slideshow">
-            <div id="pic1">
+        <div class="slideshows" id="slideshow">
+            <div class="pic1">
                 <img src="joe.png">
-                <h1 class="spot_title">Joe Hisashi</h1>
+                <h1 class="spot_title">Joe Hisaishi</h1>
                 <h3 class="details">Los Angeles, CA</h3>
                 <h3 class="details">June 28, 2023</h3>
                 <h3 class="details">Hollywood Bowl</h3>
             </div>
-            <div id="pic2">
+            <div class="pic2">
                 <img src="jj.png">
                 <h1 class="spot_title">JJ Lin</h1>
                 <h3 class="details">San Francisco, CA</h3>
@@ -51,36 +60,83 @@
         </div>
     </div>
     <div id="categories">
+        <div id="popularity">
+            <text class="text_button big_font sort" id="default_sort">Hot</text>
+            <text class="text_button big_font sort">Upcoming</text>
+            <text class="text_button big_font sort">Top</text>
+        </div>
         <form id="category_form">
-            <button class="text_button category" type="button">All</button>
+            <button class="text_button category" type="button" id="default_all">All</button>
             <button class="text_button category" type="button">Pop</button>
             <button class="text_button category" type="button">Hip-hop</button>
             <button class="text_button category" type="button">Classical</button>
             <button class="text_button category" type="button">K-pop</button>
-            <div class="vertical_line"></div>
+            <div class="vertical_line" id="cat_vert"></div>
             <button class="text_button category" type="button">All</button>
             <button class="text_button category" type="button">Basketball</button>
             <button class="text_button category" type="button">Football</button>
             <button class="text_button category" type="button">Soccer</button>
         </form>
     </div>
-    <div id="table">
+    <div id="events">
         <div id="headers">
-            <div class="header" id="artist">Artist</div>
-            <div class="header" id="tour">Tour</div>
-            <div class="header" id="floor">Floor Price</div>
-            <div class="header" id="vol">Volume</div>
-            <div class="header" id="cash">Cash Price</div>
-            <div class="header" id="date">Date</div>
-            <div class="header" id="venue">Venue</div>
+            <div class="header" id="artist">
+                <section class="table_column">Artist</section>
+                <section class="section_info has_picture">
+                    <!-- 1 <img class="thumbnail" alt="Post Malone" src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=425,format=auto/sites/default/files/styles/768x768/public/d8/images/methode/2020/02/21/edf6e522-52de-11ea-8948-c9a8d8f9b667_image_hires_045852.jpg?itok=MBGVfIH7&v=1582232343"> -->
+                    <span class="list">1</span> Post Malone
+                </section>
+                <section class="section_info has_picture">
+                    <!-- 2 <img class="thumbnail" alt="Billie Eilish" src="https://yt3.googleusercontent.com/ytc/AGIKgqOE2odAevc22sdCkQsZ3of410-sHBKA5ZhjeBxaZQ=s900-c-k-c0x00ffffff-no-rj"> -->
+                    <span class="list">2</span> Billie Eilish
+                </section>
+                <section class="section_info has_picture">
+                    <!-- 3 <img class="thumbnail" alt="Bad Bunny" src="https://yt3.googleusercontent.com/7tCfeCWH4arhsTM-4Rz4IxWieQbegzibeXlG-kbytAujdk5dr2K0gBb8NG0Cvk6lB1dPkjyd=s900-c-k-c0x00ffffff-no-rj"> -->
+                    <span class="list">3</span> Bad Bunny
+                </section>
+            </div>
+            <div class="header" id="tour">
+                <section class="table_column">Tour</section>
+                <section class="section_info">Twelve Carat</section>
+                <section class="section_info">Ocean Eyes</section>
+                <section class="section_info">El Ultimo</section>
+            </div>
+            <div class="header" id="floor">
+                <section class="table_column">Floor Price</section>
+                <section class="section_info">12.12 ETH</section>
+                <section class="section_info">4.31 ETH</section>
+                <section class="section_info">0.15 ETH</section>
+            </div>
+            <div class="header" id="vol">
+                <section class="table_column">Volume</section>
+                <section class="section_info">32 ETH</section>
+                <section class="section_info">2.31 ETH</section>
+                <section class="section_info">8.8 ETH</section>
+            </div>
+            <div class="header" id="cash">
+                <section class="table_column">Cash Price</section>
+                <section class="section_info">$79.99</section>
+                <section class="section_info">$31.99</section>
+                <section class="section_info">$22</section>
+            </div>
+            <div class="header" id="date">
+                <section class="table_column">Date</section>
+                <section class="section_info">July 5, 2023</section>
+                <section class="section_info">December 8, 2023</section>
+                <section class="section_info">September 23, 2023</section>
+            </div>
+            <!-- <div class="header" id="venue">
+                <section class="table_column">Venue</section><br>
+                <section class="section_info">Crypto.com Arena</section>
+                <section class="section_info">Madison Square Garden</section>
+                <section class="section_info">Mercedes Benz Stadium</section>
+            </div> -->
         </div>
     </div>
-
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
-
     <script type="text/javascript">
         $("#slideshow").slick({
-            dots: true,
+            dots: false,
             infinite: true,
             speed: 1000,
             slidesToShow: 1,
@@ -88,14 +144,35 @@
             autoplaySpeed: 4000,
             variableHeight: true,
             variableWidth: true,
+            // asNavFor: "#bg_vid",
         });
-
+        // $("#bg_vid").slick({
+        //     dots: false,
+        //     arrows: false,
+        //     infinite: true,
+        //     speed: 500,
+        //     slidesToShow: 1,
+        //     autoplay: true,
+        //     autoplaySpeed: 4000,
+        //     variableHeight: true,
+        //     variableWidth: true,
+        //     fade: true,
+        //     cssEase: 'linear',
+        //     asNavFor: "#slideshow",
+        // });
         $(".category").click(function () {
             let categories = document.getElementsByClassName("category");
             for (let i = 0; i < categories.length; i++) {
-                $(categories[i]).css("background-color", "white");
+                $(categories[i]).css("background-color", "transparent");
             }
             $(this).css("background-color", "#E4C1F9");
+        });
+        $(".sort").click(function () {
+            let sorts = document.getElementsByClassName("sort");
+            for (let i = 0; i < sorts.length; i++) {
+                $(sorts[i]).css("border", "none");
+            }
+            $(this).css("border-bottom", "5px solid #E4C1F9");
         });
     </script>
 </body>
