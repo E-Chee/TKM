@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> SCTickets Landing Page </title>
+    <meta charset="utf-8">
+    <meta name="description" content="HTML Basics">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="landing_page_stylesheet.css" rel="stylesheet">
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="https://kit.fontawesome.com/0740de9cc4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+    <div id="nav_bar">
+        <div id="logo">
+            <h2>SCTickets</h2>
+        </div>
+        <div class="vertical_line" id="nav_vert"></div>
+        <form id="nav_form">
+            <button class="text_button">About</button>
+            <div id="search_section">
+                <span class="img_button" id="mag"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" id="search_bar" name="search_bar" placeholder="Search for concerts and events">
+            </div>
+            <button class="text_button">Sell</button>
+            <button class="text_button">Upcoming</button>
+            <span class="img_button"><i class="fa-solid fa-user"></i></span>
+            <span class="img_button"><i class="fa-solid fa-cart-shopping"></i></span>
+        </form>
+    </div>
+    <br>
+    <div id="spotlight">
+        <div id="slideshow">
+            <div id="pic1">
+                <img src="joe.png">
+                <h1 class="spot_title">Joe Hisashi</h1>
+                <h3 class="details">Los Angeles, CA</h3>
+                <h3 class="details">June 28, 2023</h3>
+                <h3 class="details">Hollywood Bowl</h3>
+            </div>
+            <div id="pic2">
+                <img src="jj.png">
+                <h1 class="spot_title">JJ Lin</h1>
+                <h3 class="details">San Francisco, CA</h3>
+                <h3 class="details">October 11, 2023</h3>
+                <h3 class="details">Chase Arena</h3>
+            </div>
+        </div>
+    </div>
+    <div id="categories">
+        <form id="category_form">
+            <button class="text_button category" type="button">All</button>
+            <button class="text_button category" type="button">Pop</button>
+            <button class="text_button category" type="button">Hip-hop</button>
+            <button class="text_button category" type="button">Classical</button>
+            <button class="text_button category" type="button">K-pop</button>
+            <div class="vertical_line"></div>
+            <button class="text_button category" type="button">All</button>
+            <button class="text_button category" type="button">Basketball</button>
+            <button class="text_button category" type="button">Football</button>
+            <button class="text_button category" type="button">Soccer</button>
+        </form>
+    </div>
+    <div id="table">
+        <div id="headers">
+            <div class="header" id="artist">Artist</div>
+            <div class="header" id="tour">Tour</div>
+            <div class="header" id="floor">Floor Price</div>
+            <div class="header" id="vol">Volume</div>
+            <div class="header" id="cash">Cash Price</div>
+            <div class="header" id="date">Date</div>
+            <div class="header" id="venue">Venue</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $("#slideshow").slick({
+            dots: true,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            variableHeight: true,
+            variableWidth: true,
+        });
+
+        $(".category").click(function () {
+            let categories = document.getElementsByClassName("category");
+            for (let i = 0; i < categories.length; i++) {
+                $(categories[i]).css("background-color", "white");
+            }
+            $(this).css("background-color", "#E4C1F9");
+        });
+    </script>
+</body>
+
+</html>
