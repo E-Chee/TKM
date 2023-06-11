@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Garet;
+    src: url(Garet-Book.otf);
+}
+body {
+    padding-right: 20vw;
+    padding-left: 20vw;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Garet, sans-serif;
+    background-color: #c1e1f1;
+    /* background-color: #155263; */
+    /* color: #FFC93C; */
+}
+h1 {
+    margin-bottom: 2vh;
+}
+p {
+    font-size: small;
+}
+input[type="file"] {
+    display: none;
+}
+input[type="text"] {
+    border-radius: 5px;
+    height: 3vh;
+    line-height: 2.75vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-family: Garet, sans-serif;
+}
+textarea {
+    width: 95%;
+    height: 10vh;
+    border-radius: 5px;
+    padding-left: 1vw;
+    padding-top: 0.5vh;
+    font-family: Garet, sans-serif;
+}
+select {
+    width: 100%;
+    height: 3vh;
+    line-height: 2.75vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 5px;
+    font-family: Garet, sans-serif;
+}
+.form_field {
+    background-color: white ;
+    border-radius: 10px;
+    padding: 2vh;
+    margin: 2vh;
+}
+#header {
+    background-color: white;
+    border-radius: 10px;
+    padding: none;
+    padding-top: 1vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 0.5vh;
+    margin: 2vh;
+}
+/* #colorbar {
+    width: 105.9%;
+    height: 1vh;
+    background-color: #daabf5;
+    margin: -1.43vw;
+    border-radius: 5px 5px 0px 0px;
+} */
+.field_title {
+    margin-bottom: .75vh;
+    margin-top: 0vh;
+}
+.custom_upload {
+    border: 0.3vh dashed #ccc;
+    display: inline-block;
+    padding-top: 0vh;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    font-size: 3.5vh;
+}
+.asterisk {
+    color: #daabf5;
+    /* color: #FFC93C; */
+}
+.button {
+    background-color: #daabf5;
+    /* background-color: #FFC93C; */
+    border-radius: 10px;
+    padding: 1vh;
+    margin: 2vh;
+    border: none;
+    font-family: Garet, sans-serif;
+    font-size: medium;
+}
