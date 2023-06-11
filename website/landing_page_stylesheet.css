@@ -2,7 +2,6 @@
     font-family: Garet;
     src: url(Garet-Book.otf);
 }
-
 body {
     text-align: center;
     margin: none;
@@ -14,7 +13,6 @@ body {
     align-items: center;
     font-family: Garet, sans-serif;
 }
-
 button {
     display: inline-flex;
     align-items: center;
@@ -22,18 +20,15 @@ button {
     vertical-align: middle;
     flex-wrap: wrap;
 }
-
 #background {
     margin: none;
     min-width: 100%;
     min-height: 100%;
 }
-
 #bg_vid {
     min-width: 100%;
     min-height: 100%;
 }
-
 #nav_bar {
     /* position: fixed; */
     display: flex;
@@ -44,8 +39,8 @@ button {
     width: 100%;
     max-width: 100%;
     min-width: 0;
+    font-family: Garet, sans-serif;
 }
-
 #logo {
     object-fit: contain;
     width: 3vw;
@@ -55,7 +50,6 @@ button {
     margin-right: 0.5vw;
     min-width: 0;
 }
-
 #logo_title {
     font-size: 28px;
     margin: 1vh;
@@ -66,7 +60,6 @@ button {
     /* overflow: hidden; */
     display: flex;
 }
-
 .vertical_line {
     border-left: 3px solid black;
     height: 4.5vh;
@@ -74,23 +67,115 @@ button {
     margin-top: 0.5vh;
     display: flex;
 }
-
 #nav_vert {
     border-left: 3px solid #A9DEF9;
 }
-
 #nav_form {
     display: flex;
     justify-content: space-around;
     flex-grow: 2;
     min-width: 0px;
 }
-
 .text_button {
     border: none;
     background-color: inherit;
     cursor: pointer;
     padding: 1vh 1.5vh;
+    font-size: 16px;
+    height: 6vh;
+    margin: 0.25vh;
+    margin-right: none;
+    border-radius: 7px;
+    font-family: Garet, sans-serif;
+    min-width: 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+}
+.text_button:hover {
+    background-color: #eee;
+    color: black;
+}
+#search_section {
+    background-color: rgb(238, 238, 238);
+    border-radius: 7px;
+    height: 5vh;
+    margin: 0.75vh;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    margin-top: 0.2vh;
+    min-width: 0px;
+}
+#search_bar {
+    border-radius: 7px;
+    border: none;
+    height: 4vh;
+    padding: 0.5vh;
+    padding-left: 1.5vh;
+    background: transparent;
+    flex-grow: 2;
+    flex-shrink: 2;
+    font-size: 18px;
+    min-width: 0px;
+    display: flex;
+    font-family: Garet, sans-serif;
+}
+input#search_bar:focus {
+    outline-width: 0;
+}
+.img_button {
+    color: #A9DEF9;
+    font-size: 3vh;
+    margin: 1.5vh;
+    margin-top: 1vh;
+    cursor: pointer;
+    min-width: 0px;
+    display: flex;
+}
+#magnifying_glass {
+    font-size: 2vh;
+    margin: 1vh;
+    margin-right: 0vh;
+    margin-left: 1.5vh;
+    margin-top: 1.5vh;
+}
+#spotlight {
+    text-align: left;
+    color: white;
+}
+.slideshows {
+    margin: auto;
+    width: 90vw;
+    height: 50vh;
+    overflow: visible;
+}
+img {
+    width: 90vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.spot_title {
+    position: relative;
+    bottom: 28vh;
+    left: 5vw;
+    font-size: 4vh;
+}
+.details {
+    position: relative;
+    bottom: 28vh;
+    left: 5vw;
+    font-size: 2vh;
+    line-height: 1vh;
+}
+.text_buttons {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 1vh 1.25vh;
     font-size: 16px;
     height: 5vh;
     margin: 0.25vh;
@@ -104,94 +189,10 @@ button {
     vertical-align: middle;
     flex-wrap: wrap;
 }
-
-    .text_button:hover {
-        background-color: #eee;
-        color: black;
-    }
-
-#search_section {
-    background-color: rgb(238, 238, 238);
-    border-radius: 7px;
-    height: 5vh;
-    margin: 0.75vh;
-    display: flex;
-    flex-direction: row;
-    flex-grow: 2;
-    margin-top: 0.2vh;
-    min-width: 0px;
+.text_buttons:hover {
+    background-color: #eee;
+    color: black;
 }
-
-#search_bar {
-    border-radius: 7px;
-    border: none;
-    height: 4vh;
-    padding: 0.5vh;
-    padding-left: 1.5vh;
-    background: transparent;
-    flex-grow: 2;
-    flex-shrink: 2;
-    font-size: 18px;
-    min-width: 0px;
-    display: flex;
-}
-
-input#search_bar:focus {
-    outline-width: 0;
-}
-
-.img_button {
-    color: #A9DEF9;
-    font-size: 3vh;
-    margin: 1.5vh;
-    margin-top: 1vh;
-    cursor: pointer;
-    min-width: 0px;
-    display: flex;
-}
-
-#magnifying_glass {
-    font-size: 2vh;
-    margin: 1vh;
-    margin-right: 0vh;
-    margin-left: 1.5vh;
-    margin-top: 1.5vh;
-}
-
-#spotlight {
-    text-align: left;
-    color: white;
-}
-
-.slideshows {
-    margin: auto;
-    width: 90vw;
-    height: 50vh;
-    overflow: visible;
-}
-
-img {
-    width: 90vw;
-    height: 50vh;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.spot_title {
-    position: relative;
-    bottom: 28vh;
-    left: 5vw;
-    font-size: 5vh;
-}
-
-.details {
-    position: relative;
-    bottom: 28vh;
-    left: 5vw;
-    font-size: 2.5vh;
-    line-height: 1.25vh;
-}
-
 #categories {
     display: inline-flex;
     justify-content: space-between;
@@ -199,54 +200,46 @@ img {
     margin-top: 2.5vh;
     width: 92%;
     position: relative;
-    height: 8vh;
+    height: 6vh;
 }
-
 #popularity {
     display: flex;
 }
-
 .big_font {
-    font-size: 1.75vw;
+    font-size: 16px;
     font-weight: bold;
     margin: 0.3vw;
     /* margin-left: 0.3vw;
     margin-right: 0.3vw; */
     padding-right: 0.5vw;
     padding-left: 0.5vw;
-    line-height: 5vh;
+    line-height: 1vh;
+    height: 4.5vh;
 }
-
 .sort {
     background: transparent;
-    height: 4vh;
+    height: 2.5vh;
 }
-
 #default_sort {
     border-bottom: 5px solid #E4C1F9;
 }
-
 #category_form {
     display: inline-flex;
     flex-wrap: nowrap;
     overflow: hidden;
 }
-
 .category {
-    font-size: 20px;
+    font-size: 17px;
     background: transparent;
     display: inline-flex;
-    height: 6vh;
+    height: 4.5vh;
 }
-
 #cat_vert {
     border-left: 3px solid #E4C1F9;
 }
-
 #default_all {
     background-color: #E4C1F9;
 }
-
 #events {
     display: flex;
     width: 90%;
@@ -254,22 +247,18 @@ img {
     flex-direction: column;
     margin-top: 1.5vh;
 }
-
 table, th, td {
     border: 3px solid black;
 }
-
 #event_table {
     display: inline-flex;
 }
-
 #headers {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
-
 .header {
     width: fit-content;
     display: flex;
@@ -277,39 +266,33 @@ table, th, td {
     margin-left: 0.5vw;
     margin-right: 0.5vw;
 }
-
 .table_column {
-    font-size: 1vw;
+    font-size: 0.75vw;
     display: flex;
     color: lightslategray;
     width: fit-content;
     justify-content: flex-end;
     margin-bottom: 1vh;
 }
-
 #artist {
     margin-left: 0vh;
     text-align: left;
 }
-
 #tour {
     justify-content: flex-end;
 }
-
 #venue {
     margin-right: 0.5vw;
     justify-content: flex-end;
 }
-
 .section_info {
-    font-size: 1.4vw;
+    font-size: 0.9vw;
     height: 6vh;
     width: fit-content;
     justify-content: flex-end;
     align-items: center;
     align-content: center;
 }
-
 .thumbnail {
     width: 3vw;
     height: 5vh;
@@ -317,144 +300,115 @@ table, th, td {
     padding: 0.25vw;
     object-fit: cover;
     display: inline-block;
-    line-height: 5vh;
+    line-height: 4vh;
 }
-
 .list {
-    font-size: 1.2vw;
+    font-size: 0.9vw;
     color: #d49ff3;
 }
-
 @media screen and (max-width: 1000px) {
     #nav_bar {
         width: 85%;
     }
-
     #logo_title {
         font-size: 26px;
     }
-
     .category {
         font-size: 16px;
     }
-
     #cat_vert {
         margin: 1vh;
     }
 }
-
 @media screen and (max-width: 900px) {
     #nav_bar {
         width: 85%;
     }
-
     #logo_title {
         font-size: 24px;
     }
-
     .category {
         font-size: 15px;
         height: 5vh;
         margin-top: 1vh;
     }
-
     #cat_vert {
         margin: 1.25vh;
     }
 }
-
 @media screen and (max-width: 800px) {
     #logo_title {
         font-size: 18px;
     }
-
     #logo {
         width: 5vw;
         height: 5.5vh;
     }
-
     .category {
         font-size: 13px;
         height: 4vh;
         margin-top: 1.25vh;
     }
-
     .sort {
         height: 3.5vh;
     }
-
     #cat_vert {
         margin: 1.5vh;
     }
 }
-
 @media screen and (max-width: 700px) {
     #logo_title {
         font-size: 16px;
     }
-
     .category {
         font-size: 11px;
     }
-
     .sort {
         height: 3.25vh;
     }
-
     #cat_vert {
         margin: 1.75vh;
     }
 }
-
 @media screen and (max-width: 600px) {
     #nav_bar {
         width: 75%;
     }
-
     #logo_title {
         font-size: 12px;
     }
-
     #logo {
         width: 7vw;
         height: 5.5vh;
     }
-
     .category {
         font-size: 8px;
         height: 4vh;
         margin-top: 1.5vh;
     }
-
     .sort {
         height: 2.85vh;
     }
-
     #cat_vert {
         margin: 1.9vh;
     }
 }
-
 @media screen and (max-width: 500px) {
     #logo_title {
         font-size: 14px;
     }
-
     #logo {
         width: 9vw;
         height: 5.5vh;
     }
-
     .category {
         font-size: 7px;
         height: 3vh;
         margin-top: 1.75vh;
     }
-
     .sort {
         height: 2.5vh;
     }
-
     #cat_vert {
         margin: 2.1vh;
     }
