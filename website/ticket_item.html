@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Ticket Item </title>
+    <meta charset="utf-8">
+    <meta name="description" content="HTML Basics">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/0740de9cc4.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+            font-family: Garet;
+            src: url(Garet-Book.otf);
+        }
+
+        body {
+            background-color: black;
+            font-family: Garet, sans-serif;
+        }
+
+        .ticket {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+
+        .thumbnail {
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .body {
+            margin: 2vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+
+        .tour {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .date {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ticket">
+        <img class="thumbnail" id="pic1"
+            src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-05/taylor-swift-speak-now-purple-today-sk-230505-c46151.jpg"
+            alt="Taylor Swift">
+        <div class="body">
+            <h1>Taylor Swift</h1>
+            <div class="tour">
+                <h3>The Eras Tour</h3>
+                <h3>$105</h3>
+            </div>
+            <div class="date">
+                <h3>August 10, 2023</h3>
+                <h3>0.15 ETH</h3>
+            </div>
+            <h3>SoFi Stadium, Inglewood CA</h3>
+        </div>
+    </div>
+</body>
+
+</html>
