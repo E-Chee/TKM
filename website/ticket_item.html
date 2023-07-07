@@ -2,67 +2,69 @@
 <html lang="en">
 
 <head>
-    <title> SCTickets Ticket Form </title>
+    <title> Ticket Item </title>
     <meta charset="utf-8">
     <meta name="description" content="HTML Basics">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="ticket_form_stylesheet.css" rel="stylesheet">
-    <script src="jquery-3.6.4.min.js"></script>
     <script src="https://kit.fontawesome.com/0740de9cc4.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+            font-family: Garet;
+            src: url(Garet-Book.otf);
+        }
+
+        body {
+            background-color: black;
+            font-family: Garet, sans-serif;
+        }
+
+        .ticket {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+
+        .thumbnail {
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .body {
+            margin: 2vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+
+        .tour {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .date {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 
 <body>
-    <!--Post method moves file from query string parameters to body of the request. Feel free to change it back it needed-->
-    <!--Enctype sends file contents as binary. Also feel free to change as needed-->
-    <div id="form">
-        <form method="post" enctype="multipart/form-data">
-            <div id="header">
-                <h1>Create New Item</h1>
-                <h5><span class="asterisk">*</span> Indicates Required Fields</h5>
+    <div class="ticket">
+        <img class="thumbnail" id="pic1"
+            src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-05/taylor-swift-speak-now-purple-today-sk-230505-c46151.jpg"
+            alt="Taylor Swift">
+        <div class="body">
+            <h1>Taylor Swift</h1>
+            <div class="tour">
+                <h3>The Eras Tour</h3>
+                <h3>$105</h3>
             </div>
-            <div id="colorbar"><p>&nbsp;</p></div>
-            <div class="form_field">
-                <h3 class="field_title">Image, Video, Audio, or 3D Model <span class="asterisk">*</span></h3>
-                <p>File types supported: JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG, GLB, GLTF. Max size: 100 MB</p>
-                <label for="userfile" class="custom_upload">
-                    <i class="fa-solid fa-upload icon"></i>
-                </label>
-                <input type="file" id="userfile" name="userfile">
+            <div class="date">
+                <h3>August 10, 2023</h3>
+                <h3>0.15 ETH</h3>
             </div>
-            <div class="form_field">
-                <h3 class="field_title">Name <span class="asterisk">*</span></h3>
-                <input type="text" id="filename" name="filename" placeholder="Item name">
-            </div>
-            <div class="form_field">
-                <h3 class="field_title">Date <span class="asterisk">*</span></h3>
-                <input type="text" id="eventdate" name="eventdate" placeholder="Date of event">
-            </div>
-            <div class="form_field">
-                <h3 class="field_title">Seat </h3>
-                <input type="text" id="eventseat" name="eventseat" placeholder="Seat number">
-            </div>
-            <div class="form_field">
-                <h3 class="field_title">Price <span class="asterisk">*</span></h3>
-                <input type="text" id="fileprice" name="fileprice" placeholder="Selling price of ticket">
-            </div>
-            <div class="form_field">
-                <h3 class="field_title">Description</h3>
-                <p>The description will be included on the item's detail page underneath its image. Markdown syntax is supported.</p>
-                <textarea id="filedesc" name="filedesc" placeholder="Provide a detailed description of your item."></textarea>
-            </div>
-            <div class="form_field">
-                <h3 class="field_title">Collection</h3>
-                <p>This is the collection where your item will appear</p>
-                <select id="filecollection" name="filecollection">
-                    <option value="" disabled selected hidden>Select collection</option>
-                    <option value="Collection 1">Collection 1</option>
-                    <option value="Collection 2">Collection 2</option>
-                    <option value="Collection 3">Collection 3</option>
-                </select>
-            </div>
-            <input type="submit" class="button">
-            <br><br>
-        </form>
+            <h3>SoFi Stadium, Inglewood CA</h3>
+        </div>
     </div>
 </body>
+
 </html>
