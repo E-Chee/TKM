@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Garet;
+    src: url(Garet-Book.otf);
+}
+body{
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    margin: 0px;
+    font-family: Garet, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+    color: white;
+    padding: 5vh;
+}
+#title{
+    display: flex;
+    margin-left: 8vw;
+    margin-bottom: 2vh;
+}
+#logo{
+    width: 4%;
+    margin-right: 1vw;
+}
+#content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
