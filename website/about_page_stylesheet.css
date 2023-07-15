@@ -1,0 +1,7 @@
+body{
+    display: flex;
+}
+.text_box{
+    display: flex;
+    flex-direction: column;
+}
