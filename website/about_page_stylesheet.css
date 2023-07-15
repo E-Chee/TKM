@@ -1,7 +1,26 @@
+@font-face {
+    font-family: Garet;
+    src: url(Garet-Book.otf);
+}
 body{
     display: flex;
+    flex-direction: column;
+    font-family: Garet, sans-serif;
+}
+h1{
+    margin-bottom: 50%;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .text_box{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    width: 50%;
 }
